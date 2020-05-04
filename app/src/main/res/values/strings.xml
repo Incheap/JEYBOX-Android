@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JEYBOX</string>
+    <string name="Connect">Se connecter</string>
+    <string name="User">Utilisateur</string>
+    <string name="Password">Mot de passe</string>
+    <string name="LogoDes">Logo JEYBOX</string>
 </resources>

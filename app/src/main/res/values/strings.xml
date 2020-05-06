@@ -5,6 +5,7 @@
     <string name="User">Utilisateur</string>
     <string name="Password">Mot de passe</string>
     <string name="LogoDes">Logo JEYBOX</string>
+    <string name="ForgotPass"><u>Mot de passe oublié ?</u></string>
     <!--ForgotPassword text-->
     <string name="Mail">Adresse courriel</string>
     <string name="NewPassword">Nouveau mot de passe</string>
@@ -21,7 +22,5 @@
     <string name="idArticle">ID Article</string>
     <string name="testUser">Clement Burch</string>
     <string name="testID">RPI-2020</string>
-
-
-
+    <string name="back">Retour</string>
 </resources>

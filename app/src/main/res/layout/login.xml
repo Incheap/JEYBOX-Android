@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#223142"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="#f0b634"
+        android:text="@string/Connect"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/lblForgot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:autofillHints="@string/Password"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="text|textPassword"
+        android:text="@string/Password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnLog"
+        app:layout_constraintStart_toStartOf="@+id/txtUser"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:autofillHints="@string/User"
+        android:ems="10"
+        android:hint="@string/User"
+        android:inputType="textPersonName"
+        android:text="@string/User"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="63dp"
+        android:contentDescription="@string/LogoDes"
+        app:layout_constraintBottom_toTopOf="@+id/txtUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/small_logo" />
+
+    <TextView
+        android:id="@+id/lblForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="222dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:text="@string/ForgotPass"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnLog"
+        app:layout_constraintTop_toBottomOf="@+id/btnLog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

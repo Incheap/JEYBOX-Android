@@ -1,7 +1,26 @@
 <resources>
+    <!--Login text-->
     <string name="app_name">JEYBOX</string>
     <string name="Connect">Se connecter</string>
     <string name="User">Utilisateur</string>
     <string name="Password">Mot de passe</string>
     <string name="LogoDes">Logo JEYBOX</string>
+    <string name="ForgotPass"><u>Mot de passe oublié ?</u></string>
+    <!--ForgotPassword text-->
+    <string name="Mail">Adresse courriel</string>
+    <string name="NewPassword">Nouveau mot de passe</string>
+    <string name="ConfirmPass">Confirmer le mot de passe</string>
+    <string name="Send">Envoyer</string>
+    <!--accueil text-->
+    <string name="Article">Articles</string>
+    <string name="ConsultArticles">Consulter les articles</string>
+    <string name="Reservations">Réservations</string>
+    <string name="ConsulterReservations">Consulter les réservations</string>
+    <string name="ModifierReservations">Modifier les réservations</string>
+    <!--consulter_reservation text-->
+    <string name="user">Utilisateur</string>
+    <string name="idArticle">ID Article</string>
+    <string name="testUser">Clement Burch</string>
+    <string name="testID">RPI-2020</string>
+    <string name="back">Retour</string>
 </resources>

@@ -1,4 +1,20 @@
-package com.example.jeybox;
+
+/****************************************
+ Fichier :          ConsulterReservation.java
+ Auteur :           Jérôme Nadeau
+ Fonctionnalité :   Classe lié à un UI qui contrôle les réactions de celle-ci.
+ Date :             2020/05/06
+
+ Vérification :
+ Date               Nom                   Approuvé
+ =========================================================
+
+
+ Historique de modifications :
+ Date               Nom                   Description
+ =========================================================
+
+ ****************************************/package com.example.jeybox;
 
 import android.os.Bundle;
 import android.view.View;

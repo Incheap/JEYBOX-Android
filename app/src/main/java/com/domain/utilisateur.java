@@ -1,3 +1,19 @@
+/****************************************
+ Fichier :          utilisateur.java
+ Auteur :           Jérôme Nadeau
+ Fonctionnalité :   Classe permettant la manipulation des utilisateurs.
+ Date :             2020/05/07
+
+ Vérification :
+ Date               Nom                   Approuvé
+ =========================================================
+
+
+ Historique de modifications :
+ Date               Nom                   Description
+ =========================================================
+
+ ****************************************/
 package com.domain;
 
 import androidx.annotation.NonNull;

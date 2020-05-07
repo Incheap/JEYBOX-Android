@@ -1,3 +1,20 @@
+/****************************************
+ Fichier :          Login.java
+ Auteur :           Jérôme Nadeau
+ Fonctionnalité :   Classe lié à un UI qui contrôle les réactions de celle-ci.
+ Date :             2020/05/05
+
+ Vérification :
+ Date               Nom                   Approuvé
+ =========================================================
+
+
+ Historique de modifications :
+ Date               Nom                   Description
+ =========================================================
+
+ ****************************************/
+
 package com.example.jeybox;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +25,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         nextTxtView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ForgotPassword.class));
+                startActivity(new Intent(Login.this, ForgotPassword.class));
             }
         });
     }
@@ -37,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Accueil.class));
+                startActivity(new Intent(Login.this, Accueil.class));
             }
         });
     }

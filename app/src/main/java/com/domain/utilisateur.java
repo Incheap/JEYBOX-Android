@@ -22,6 +22,7 @@ public class utilisateur {
     private int id;
     private String name;
     private String password;
+    private String mail;
     private int type;
 
     //Empty constructor
@@ -59,6 +60,14 @@ public class utilisateur {
         this.password = pass;
     }
 
+    public String getUserMail(){
+        return mail;
+    }
+
+    public void setUserMail(String mail){
+        this.mail = mail;
+    }
+
     public int getType() {
         return type;
     }
@@ -73,6 +82,7 @@ public class utilisateur {
         return "Utilisateur{" +
                 "id= " + id +
                 ", motDePasse='" + password + '\'' +
+                ", adresseCourriel='" + mail + '\'' +
                 ", idTypePersonnel=" + type +
                 '}';
     }

@@ -17,4 +17,5 @@
 package com.controleur;
 
 public class controleur_article {
+
 }

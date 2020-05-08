@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/****************************************
+    Fichier :          main_menu.xml
+    Auteur :           Jérôme Nadeau
+    Fonctionnalité :   Menu qui permet de sauter à différentes pages et de se déconnecter
+    Date :             2020/05/08
+
+    Vérification :
+    Date               Nom                   Approuvé
+    =========================================================
+
+
+    Historique de modifications :
+    Date               Nom                   Description
+    =========================================================
+
+    ****************************************/-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/logOut"
+        android:title="@string/LogOut"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/backAccueil"
+        android:title="@string/backAccueil"
+        app:showAsAction="never"/>
+</menu>

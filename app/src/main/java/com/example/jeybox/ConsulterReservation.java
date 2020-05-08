@@ -1,4 +1,3 @@
-
 /****************************************
  Fichier :          ConsulterReservation.java
  Auteur :           Jérôme Nadeau
@@ -14,11 +13,13 @@
  Date               Nom                   Description
  =========================================================
 
- ****************************************/package com.example.jeybox;
+ ****************************************/
+package com.example.jeybox;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,6 +30,7 @@ public class ConsulterReservation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.consulter_reservation);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         configureBackButton();
 
     }

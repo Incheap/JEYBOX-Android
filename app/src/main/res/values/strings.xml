@@ -1,4 +1,7 @@
 <resources>
+    <!--Menu text-->
+    <string name="LogOut">Se déconnecter</string>
+    <string name="backAccueil">Revenir à la page d'accueil</string>
     <!--Login text-->
     <string name="app_name">JEYBOX</string>
     <string name="Connect">Se connecter</string>

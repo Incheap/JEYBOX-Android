@@ -8,76 +8,51 @@
     android:background="#223142">
 
     <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="247dp"
-        android:layout_height="0dp"
-        android:contentDescription="@string/LogoDes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/JEYBOX_Logo" />
-
-    <EditLabel
-        android:id="@+id/lblTitreArticle"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/Article"
-        android:text="@string/Article"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+        android:src="@drawable/small_logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="248dp"
+        android:layout_height="27dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="179dp" />
 
     <ImageView
-        android:id="@+id/imgCable"
-        android:layout_width="247dp"
-        android:layout_height="0dp"
-        android:contentDescription="@string/CableHDMI"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cable.jpg" />
+        android:id="@+id/imageView2"
+        android:layout_width="215dp"
+        android:layout_height="241dp"
+        android:src="@drawable/cable"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="245dp" />
 
-    <EditText
-        android:id="@+id/txtNomArticle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/iIdentifiantArticle"
-        android:inputType="textPersonName"
-        android:text="@string/IdentifiantArticle"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="556dp" />
 
-    <EditText
-        android:id="@+id/txtTypeArticle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/TypeArticle"
-        android:inputType="@string/TypeArticle"
-        android:text="@string/TypeArticle"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="157dp"
+        android:layout_height="33dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="556dp" />
 
     <Button
-        android:id="@+id/btnRetour"
-        android:layout_width="218dp"
+        android:id="@+id/btnBack"
+        android:layout_width="183dp"
         android:layout_height="48dp"
-        android:layout_marginTop="110dp"
-        android:background="#f0b634"
-        android:text="@string/Retour"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Button"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="639dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

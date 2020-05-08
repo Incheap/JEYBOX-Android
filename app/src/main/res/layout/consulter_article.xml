@@ -5,40 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".consulter_article"
-    android:background="#223142">
-
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="247dp"
-        android:layout_height="0dp"
-        android:contentDescription="@string/LogoDes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/JEYBOX_Logo" />
-
-    <EditLabel
-        android:id="@+id/lblTitreArticle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/Article"
-        android:text="@string/Article"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
-
-    <Button
-        android:id="@+id/btnRetour"
-        android:layout_width="218dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="110dp"
-        android:background="#f0b634"
-        android:text="@string/Retour"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="#223142"/>

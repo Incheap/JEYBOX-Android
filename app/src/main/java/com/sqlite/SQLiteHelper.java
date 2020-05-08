@@ -23,17 +23,17 @@ public class SQLiteHelper extends SQLiteOpenHelper{
     }
 
     public static void CREATE_ALL(SQLiteDatabase sqLiteDatabase){
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Article.CREATE_TABLE);
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Reservation.CREATE_TABLE);
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Type.CREATE_TABLE);
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Utilisateur.CREATE_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Article.CREATE_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Reservation.CREATE_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Type.CREATE_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Utilisateur.CREATE_TABLE);
     }
 
     public static void DROP_ALL(SQLiteDatabase sqLiteDatabase){
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Article.DROP_TABLE);
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Reservation.DROP_TABLE);
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Type.DROP_TABLE);
-        sqLiteDatabase.execSQL(SQLiteProfiles.SQLite_Utilisateur.DROP_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Article.DROP_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Reservation.DROP_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Type.DROP_TABLE);
+        sqLiteDatabase.execSQL(SQLiteTables.SQLite_Utilisateur.DROP_TABLE);
     }
 
     public static void RECREATE_ALL(SQLiteDatabase sqLiteDatabase){

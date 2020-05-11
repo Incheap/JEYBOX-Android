@@ -30,5 +30,7 @@
     <string name="testCategorie">Câble</string>
     <string name="testNomArticle">Raspberry Pi HDMI cable</string>
     <string name="ArticleDes">Image de l'article</string>
+    <!-- Notification -->
+    <string name="notif">Notification</string>
 
 </resources>

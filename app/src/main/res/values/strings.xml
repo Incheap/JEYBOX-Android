@@ -1,7 +1,7 @@
 <resources>
     <!--Menu text-->
     <string name="LogOut">Se déconnecter</string>
-    <string name="backAccueil">Revenir à la page d'accueil</string>
+    <string name="backAccueil">Revenir à la page accueil</string>
     <!--Login text-->
     <string name="app_name">JEYBOX</string>
     <string name="Connect">Se connecter</string>
@@ -29,7 +29,15 @@
     <!--modifier_article-->
     <string name="testCategorie">Câble</string>
     <string name="testNomArticle">Raspberry Pi HDMI cable</string>
-    <string name="ArticleDes">Image de l'article</string>
+    <string name="ArticleDes">Image article</string>
+    <!-- modifier_reservation -->
+    <string name="ModifierRes">Modifier des réservations</string>
+    <string name="Ajouter">Ajouter</string>
+    <string name="Supprimer">Supprimer</string>
+    <string name="NomClient">Nom client :</string>
+    <string name="ArticleRes">Articles Réservés :</string>
+    <string name="nb">Nombre :</string>
+    <string name="intTest">2</string>
     <!-- Notification -->
     <string name="notif">Notification</string>
 

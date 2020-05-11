@@ -24,18 +24,38 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 public class Accueil extends AppCompatActivity {
+
+    private SectionStatePagerAdapter mSectionStatePagerAdapter;
+    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accueil);
 
+        mSectionStatePagerAdapter = new SectionStatePagerAdapter(getSupportFragmentManager());
+
+        mViewPager = (ViewPager) findViewById(R.id.container);
+        setUpViewPager(mViewPager);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         configureConsulterRes();
+    }
+
+    private void setUpViewPager(ViewPager viewPager){
+        SectionStatePagerAdapter adapter = new SectionStatePagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new AjouterReservation(), "ajouter_reservation");
+        adapter.addFragment(new SupprimerReservation(), "supprimer_reservation");
+        viewPager.setAdapter(adapter);
+    }
+
+    public void setViewPager(int fragmentNumber){
+        mViewPager.setCurrentItem(fragmentNumber);
     }
 
     @Override

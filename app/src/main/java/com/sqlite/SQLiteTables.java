@@ -60,7 +60,7 @@ public class SQLiteTables {
                 COLUMN_NAME[1] + " varchar(255)," +
                 COLUMN_NAME[2] + " varchar(255)," +
                 COLUMN_NAME[3] + " varchar(255)," +
-                COLUMN_NAME[3] + " boolean;";
+                COLUMN_NAME[4] + " boolean;";
 
 
         public static final String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;

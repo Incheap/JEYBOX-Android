@@ -26,5 +26,9 @@
     <string name="testUser">Clement Burch</string>
     <string name="testID">RPI-2020</string>
     <string name="back">Retour</string>
+    <!--modifier_article-->
+    <string name="testCategorie">Câble</string>
+    <string name="testNomArticle">Raspberry Pi HDMI cable</string>
+    <string name="ArticleDes">Image de l'article</string>
 
 </resources>

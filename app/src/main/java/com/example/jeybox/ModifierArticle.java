@@ -17,7 +17,7 @@ public class ModifierArticle extends AppCompatActivity {
 
     }
 
-    //Navigate back to accueil
+    //Navigate back to ConsulterArticle
     private void configureBackButton(){
         Button backButton = (Button) findViewById(R.id.btnBack);
         backButton.setOnClickListener(new View.OnClickListener(){

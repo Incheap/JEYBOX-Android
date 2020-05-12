@@ -35,9 +35,12 @@ public class Accueil extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         configureConsulterRes();
+        configureModifierRes();
     }
 
+    //Création de la barre de menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
@@ -45,6 +48,7 @@ public class Accueil extends AppCompatActivity {
         return true;
     }
 
+    //Opérations du menu
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
@@ -69,6 +73,17 @@ public class Accueil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Accueil.this, ConsulterReservation.class));
+            }
+        });
+    }
+
+    //  Navigation vers ajouter_reservation
+    private void configureModifierRes(){
+        Button nextButton = (Button) findViewById(R.id.btnReservation2);
+        nextButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Accueil.this, AjouterReservation.class));
             }
         });
     }

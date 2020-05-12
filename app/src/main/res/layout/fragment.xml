@@ -66,30 +66,30 @@
             android:id="@+id/linearLayout4"
             android:layout_width="411dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/lblClient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/oxygen_bold"
                 android:text="@string/NomClient"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:fontFamily="@font/oxygen_bold"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:id="@+id/txtClient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="@string/testUser"
                 android:ems="10"
-                android:fontFamily="@font/oxygen_bold"
-                android:hint="@string/testUser"
                 android:inputType="textPersonName"
+                android:hint="@string/testUser"
                 android:text="@string/testUser"
+                android:fontFamily="@font/oxygen_bold"
+                android:textSize="18sp"
                 android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+                android:autofillHints="@string/testUser" />
 
             <TextView
                 android:id="@+id/lblArticle"
@@ -104,14 +104,14 @@
                 android:id="@+id/txtArticleID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="@string/testID"
                 android:ems="10"
-                android:fontFamily="@font/oxygen_bold"
-                android:hint="@string/testID"
                 android:inputType="textPersonName"
+                android:hint="@string/testID"
                 android:text="@string/testID"
+                android:fontFamily="@font/oxygen_bold"
+                android:textSize="18sp"
                 android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+                android:autofillHints="@string/testID" />
 
         </LinearLayout>
 

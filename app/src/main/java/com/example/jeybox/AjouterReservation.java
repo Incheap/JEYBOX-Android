@@ -2,57 +2,65 @@ package com.example.jeybox;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Switch;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
-public class AjouterReservation extends Fragment {
+public class AjouterReservation extends AppCompatActivity {
 
-    private Switch swSupp;
-    private Switch swAjout;
-    //private Button btnOk;
-    private Button btnBack;
+//    private SectionStatePagerAdapter mSectionStatePagerAdapter;
+//    private ViewPager mViewPager;
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.ajouter_reservation, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.ajouter_reservation);
 
-        swSupp = (Switch) view.findViewById(R.id.swcSup);
-        swAjout = (Switch) view.findViewById(R.id.swcAj);
-        //btnOk = (Button) view.findViewById(R.id.btnOk);
-        btnBack = (Button) view.findViewById(R.id.btnBack);
+//        mSectionStatePagerAdapter = new SectionStatePagerAdapter(getSupportFragmentManager());
+//
+//        mViewPager = (ViewPager) findViewById(R.id.container);
+//        setUpViewPager(mViewPager);
 
-        swSupp.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Toast.makeText(getActivity(), "Page de suppression", Toast.LENGTH_SHORT).show();
-                ((Accueil)getActivity()).setViewPager(1);
-            }
-        });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        configureBackButton();
+        configureSwitchButton();
 
-        swAjout.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Toast.makeText(getActivity(), "Page d'ajout'", Toast.LENGTH_SHORT).show();
-                ((Accueil)getActivity()).setViewPager(0);
-            }
-        });
-
-        btnBack.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(getActivity(), Accueil.class);
-                //Navigate back to accueil
-            }
-        });
-
-        return view;
     }
+
+    private void configureSwitchButton() {
+        Switch SuppSwitch = (Switch) findViewById(R.id.swcSup);
+        SuppSwitch.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AjouterReservation.this, SupprimerReservation.class));
+            }
+        });
+    }
+
+    //Navigate back to accueil
+    private void configureBackButton(){
+        Button backButton = (Button) findViewById(R.id.btnBack);
+        backButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                finish();
+            }
+        });
+    }
+
+//    private void setUpViewPager(ViewPager viewPager){
+//        SectionStatePagerAdapter adapter = new SectionStatePagerAdapter(getSupportFragmentManager());
+//        adapter.addFragment(new SupprimerReservation(), "supprimer_reservation");
+//        adapter.addFragment(new FragmentRes(), "ajouter_reservation");
+//        viewPager.setAdapter(adapter);
+//    }
+
+//    public void setViewPager(int fragmentNumber){
+//        mViewPager.setCurrentItem(fragmentNumber);
+//    }
+
+
 }

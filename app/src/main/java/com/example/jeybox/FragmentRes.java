@@ -12,7 +12,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class SupprimerReservation extends Fragment {
+public class FragmentRes extends Fragment {
+
     private Switch swSupp;
     private Switch swAjout;
     //private Button btnOk;
@@ -21,7 +22,7 @@ public class SupprimerReservation extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.supprimer_reservation, container, false);
+        View view = inflater.inflate(R.layout.ajouter_reservation, container, false);
 
         swSupp = (Switch) view.findViewById(R.id.swcSup);
         swAjout = (Switch) view.findViewById(R.id.swcAj);
@@ -40,7 +41,7 @@ public class SupprimerReservation extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(), "Page d'ajout'", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), AjouterReservation.class);
+                //((AjouterReservation) getActivity()).setViewPager(1);
             }
         });
 
@@ -55,4 +56,5 @@ public class SupprimerReservation extends Fragment {
 
         return view;
     }
+
 }

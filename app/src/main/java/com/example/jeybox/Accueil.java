@@ -24,40 +24,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 
 public class Accueil extends AppCompatActivity {
-
-    private SectionStatePagerAdapter mSectionStatePagerAdapter;
-    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accueil);
 
-        mSectionStatePagerAdapter = new SectionStatePagerAdapter(getSupportFragmentManager());
-
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        setUpViewPager(mViewPager);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         configureConsulterRes();
+        configureModifierRes();
     }
 
-    private void setUpViewPager(ViewPager viewPager){
-        SectionStatePagerAdapter adapter = new SectionStatePagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new AjouterReservation(), "ajouter_reservation");
-        adapter.addFragment(new SupprimerReservation(), "supprimer_reservation");
-        viewPager.setAdapter(adapter);
-    }
-
-    public void setViewPager(int fragmentNumber){
-        mViewPager.setCurrentItem(fragmentNumber);
-    }
-
+    //Création de la barre de menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
@@ -65,6 +48,7 @@ public class Accueil extends AppCompatActivity {
         return true;
     }
 
+    //Opérations du menu
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
@@ -89,6 +73,17 @@ public class Accueil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Accueil.this, ConsulterReservation.class));
+            }
+        });
+    }
+
+    //  Navigation vers ajouter_reservation
+    private void configureModifierRes(){
+        Button nextButton = (Button) findViewById(R.id.btnReservation2);
+        nextButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Accueil.this, AjouterReservation.class));
             }
         });
     }

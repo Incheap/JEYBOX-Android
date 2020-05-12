@@ -29,10 +29,11 @@ public class utilisateur {
     public utilisateur()
     {}
     //Base constructor
-    public utilisateur(int id, String name, String password, int type){
+    public utilisateur(int id, String name, String password, String mail, int type){
         this.id = id;
         this.name = name;
         this.password = password;
+        this.mail = mail;
         this.type = type;
     }
 

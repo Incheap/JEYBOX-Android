@@ -37,6 +37,7 @@ public class Accueil extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         configureConsulterRes();
+        configureConsulterArticles();
         configureModifierRes();
     }
 
@@ -73,6 +74,17 @@ public class Accueil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Accueil.this, ConsulterReservation.class));
+            }
+        });
+    }
+
+    //  Navigation vers consulter_reservation
+    private void configureConsulterArticles(){
+        Button nextButton = (Button) findViewById(R.id.btnArticles);
+        nextButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Accueil.this, ConsulterArticle.class));
             }
         });
     }

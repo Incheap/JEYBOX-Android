@@ -45,7 +45,6 @@
         android:ems="10"
         android:hint="@string/Password"
         android:inputType="text|textPassword"
-        android:text="@string/Password"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/txtUser"
         app:layout_constraintTop_toBottomOf="@+id/txtUser" />
@@ -59,7 +58,6 @@
         android:ems="10"
         android:hint="@string/User"
         android:inputType="textPersonName"
-        android:text="@string/User"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -5,4 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".consulter_article"
-    android:background="#223142"/>
+    android:background="#223142">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="406dp"
+        android:layout_height="125dp"
+        android:src="@drawable/small_logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="168dp"
+        android:layout_height="26dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="313dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="270dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="635dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

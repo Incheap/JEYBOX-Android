@@ -14,6 +14,7 @@
     <string name="NewPassword">Nouveau mot de passe</string>
     <string name="ConfirmPass">Confirmer le mot de passe</string>
     <string name="Send">Envoyer</string>
+    <string name="Error">Les mots de passe ne correspondent pas</string>
     <!--accueil text-->
     <string name="Article">Articles</string>
     <string name="ConsultArticles">Consulter les articles</string>

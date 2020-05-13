@@ -19,6 +19,8 @@ package com.example.jeybox;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,8 +31,10 @@ public class ForgotPassword extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.forgot_password);
+        findViewById(R.id.lblError).setVisibility(View.INVISIBLE);
 
         configureSendButton();
+
     }
 
     private void configureSendButton() {
@@ -39,9 +43,29 @@ public class ForgotPassword extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText( ForgotPassword.this, "Courriel envoyé", Toast.LENGTH_LONG).show();
-                //Validate password entry
-                finish();
+
+                    EditText pass1 = (EditText) findViewById(R.id.txtNewPass);
+                    EditText pass2 = (EditText) findViewById(R.id.txtConfirmPass);
+                    EditText mail = (EditText) findViewById(R.id.txtMail);
+
+                    if( pass1.getText().toString().equals("") || pass2.getText().toString().equals("") || mail.getText().toString().equals("")){
+                        Toast.makeText( ForgotPassword.this, "Veuillez remplir tous les champs", Toast.LENGTH_LONG).show();
+                        return;
+                }
+
+                    if(pass1.getText().toString().equals(pass2.getText().toString())){
+                        /* TODO
+                         *   Change password in bd where email = mail.getText().tostring()*/
+                        Toast.makeText( ForgotPassword.this, "Courriel envoyé", Toast.LENGTH_LONG).show();
+                        //Validate password entry
+                        finish();
+                    }
+                    else{
+                        TextView error = (TextView) findViewById(R.id.lblError);
+                        pass1.setText("");
+                        pass2.setText("");
+                        error.setVisibility(View.VISIBLE);
+                    }
             }
         });
 

@@ -1,11 +1,13 @@
 package com.example.jeybox;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,11 +25,48 @@ public class ConsulterArticle extends AppCompatActivity {
         spinner.setAdapter(myAdapter);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        configureSelectedRow();
         configureBackButton();
         configureNotifButton();
 
     }
 
+    //Set background of selected row to know which one is active
+    private void configureSelectedRow(){
+        final TextView test1 = (TextView) findViewById(R.id.lblArticle0);
+        final TextView test2 = (TextView) findViewById(R.id.lblArticle1);
+        final TextView test3 = (TextView) findViewById(R.id.lblArticle2);
+
+        test1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                test1.setBackgroundColor(Color.CYAN);
+                test2.setBackgroundColor(Color.WHITE);
+                test3.setBackgroundColor(Color.WHITE);
+            }
+        });
+
+        test2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                test1.setBackgroundColor(Color.WHITE);
+                test2.setBackgroundColor(Color.CYAN);
+                test3.setBackgroundColor(Color.WHITE);
+            }
+        });
+
+        test3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                test1.setBackgroundColor(Color.WHITE);
+                test2.setBackgroundColor(Color.WHITE);
+                test3.setBackgroundColor(Color.CYAN);
+            }
+        });
+
+    }
+
+    //Navigate to a basic notif UI
     private void configureNotifButton() {
         //  Navigation vers page de notifications
             Button notifButton = (Button) findViewById(R.id.btnNotif);

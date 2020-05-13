@@ -44,6 +44,7 @@ public class ConsulterReservation extends AppCompatActivity {
         final TextView test1 = (TextView) findViewById(R.id.lblTest2);
         final TextView test2 = (TextView) findViewById(R.id.lblTest3);
         final TextView test3 = (TextView) findViewById(R.id.lblTest4);
+
         test.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

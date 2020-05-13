@@ -40,5 +40,12 @@
     <string name="intTest">2</string>
     <!-- Notification -->
     <string name="notif">Notification</string>
+    <!-- Spinner values -->
+    <string-array name="spinnerValues">
+        <item>A-Z</item>
+        <item>Z-A</item>
+        <item>Plus récent</item>
+        <item>Plus ancien</item>
+    </string-array>
 
 </resources>

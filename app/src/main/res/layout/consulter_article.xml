@@ -1,40 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--/****************************************
+    Fichier :          consulter_article.xml
+    Auteur :           Jérôme Nadeau
+    Fonctionnalité :   UI qui permet d'afficher les articles disponibles.
+    Date :             2020/05/12
+
+    Vérification :
+    Date               Nom                   Approuvé
+    =========================================================
+
+
+    Historique de modifications :
+    Date               Nom                   Description
+    =========================================================
+
+    ****************************************/-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".consulter_article"
     android:background="#223142">
 
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="406dp"
         android:layout_height="125dp"
+        android:contentDescription="@string/LogoDes"
         android:src="@drawable/small_logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/lblArticle"
         android:layout_width="168dp"
         android:layout_height="26dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="167dp" />
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:gravity="center"
+        android:text="@string/Article"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="412dp"
-        android:layout_height="313dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="122dp"
+            android:textColor="#FFFFFF"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1" />
+
+        <SearchView
+            android:id="@+id/seacrhBar"
+            android:layout_width="189dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:background="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="323dp"
+        android:layout_height="151dp"
+        android:layout_margin="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#FFFFFF"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="270dp"></LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/lblArticle0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/testNomArticle"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lblArticle2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/testNomArticle"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/testNomArticle"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnBack"
+        android:layout_width="311dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="@string/back"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+    <Button
+        android:id="@+id/btnNotif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="635dp" />
+        android:text="@string/notif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

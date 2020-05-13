@@ -85,6 +85,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/row1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
@@ -113,6 +114,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/row2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
